@@ -1,0 +1,21 @@
+.box {
+    width: 275px;
+    border-style: solid;
+    margin-bottom: 20px;
+    border-top-width: 10px;
+    border-right-width: 15px;
+    border-bottom-width: 5px;
+    border-left-width: 1px;
+}
+
+.box__black {
+    border-color: black;
+    padding: 15px
+}
+
+.box__colors {
+    border-top-color: red;
+    border-right-color: blue;
+    border-bottom-color: green;
+    border-left-color: yellow;
+}
