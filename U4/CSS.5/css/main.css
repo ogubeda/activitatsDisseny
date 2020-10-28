@@ -1,0 +1,44 @@
+div {
+    margin: 15px;
+}
+
+.border__groove {
+    border-style: groove;
+}
+
+.border__ridge {
+    border-style: ridge;
+}
+
+.border__hidden {
+    border-style: hidden;
+}
+
+.border__dashed {
+    border-style: dashed;
+}
+
+.border__solid {
+    border-style: solid;
+}
+
+.border__none {
+    border-style: none;
+}
+
+.border__double {
+    border-style: double;
+}
+
+.border__dotted {
+    border-style: dotted;
+}
+
+.border__inset {
+    border-style: inset;
+}
+
+.border__outset {
+    border-style: outset;
+}
+
