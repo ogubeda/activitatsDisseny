@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Una casa con CSS</title>
+  <style type="text/css">
+    div {
+      position: absolute;
+      border: solid black 3px;
+      padding: 5px;
+    }
+    section {
+      position: absolute;
+    }
+
+    div.casa {
+      height: 250px;
+      width: 300px;
+      background-color: grey;
+      top: 100px;
+      left: 150px;
+    }
+
+    div.tejado {
+      height: 15px;
+      width: 330px;
+      background-color: purple;
+      top: -31px;
+      left: -16px;
+    }
+
+    div.chimenea {
+      padding: 25px 15px;
+      top: -56px;
+      left: 35px;
+      background-color: brown;
+    }
+
+    div.puerta {
+      height: 80px;
+      width: 50px;
+      background-color: brown;
+      top: 167px;
+      left: 120px;
+    }
+
+    .pany {
+      top: 40px;
+      border: 0px;
+    }
+
+    div.ventana1 {
+      background-color: green;
+      padding: 25px;
+      top: 20px;
+      left: 25px;
+    }
+
+    div.ventana2 {
+      background-color: green;
+      padding: 25px;
+      top: 20px;
+      left: 215px
+    }
+    .planta1 {
+      top: 100px
+    }
+  </style>
+</head>
+
+<body>
+  <div id="h1" class="casa">
+    <div class="tejado">
+      <div class="chimenea"></div>
+    </div>
+    <div class="puerta">
+      <div class="pany">º</div>
+    </div>
+    <section class="planta2">
+      <div class="ventana1"></div>
+      <div class="ventana2"></div>
+    </section>
+    <section class="planta1">
+      <div class="ventana1"></div>
+      <div class="ventana2"></div>
+    </section>
+
+  </div>
+</body>
+
+</html>
+<!--
+<div id="h1" class="casa">
+   <div class="tejado" />
+   <div class="puerta"><h1>door</h1></div>
+   <div class="ventana1"></div>
+   <div class="ventana2"></div>
+</div>
+-->
