@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    background-color: coral;
+    width: 500px;
+    height: 125px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 15px;
+    margin: 25px 0;
+}
+
+.container--reverse {
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.container--end {
+    justify-content: flex-end;
+}
+
+.container__obj {
+    padding: 5px 15px;
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    font-size: 50px;
+    margin: 15px;
+}

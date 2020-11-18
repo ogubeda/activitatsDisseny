@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container__obj {
+    background-color: coral;
+    border: 1px solid black;
+    flex-basis: 32%;
+    margin: 10px 0;
+    height: 150px;
+    color: white; 
+}
