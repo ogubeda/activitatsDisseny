@@ -1,0 +1,8 @@
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a [href*="mailto:"] {
+    color: black
+}
