@@ -23,7 +23,18 @@
   }
 
   .shadow3 {
+    box-shadow: 4px 4px 0 -1px red,
+    -10px -1px 5px 1px gold;
+  }
 
+  .shadow4 {
+    box-shadow: 2px 2px 20px 1px yellow,
+                -2px -2px 20px 1px yellow;
+  }
+
+  .shadow5 {
+    box-shadow: inset 2px 2px 20px 1px yellow,
+                inset -2px -2px 20px 1px yellow;
   }
   </style>
 </head>
@@ -33,10 +44,10 @@
 <br />
 <div class="caja shadow2">box-shadow</div>
 <br />
-<div class="caja">box-shadow</div>
+<div class="caja shadow3">box-shadow</div>
 <br />
-<div class="caja">box-shadow</div>
+<div class="caja shadow4">box-shadow</div>
 <br />
-<div class="caja">box-shadow</div>
+<div class="caja shadow5">box-shadow</div>
 </body>
 </html>
