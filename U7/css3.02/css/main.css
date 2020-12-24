@@ -1,8 +1,61 @@
+:root {
+    --mail-photo: url('../img/user-male.png');
+    --pdf-photo: url('../img/pdf.png');
+    --zip-photo: url('../img/zip.png');
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
 .title {
     font-size: 18px;
     font-weight: bold;
 }
 
-a [href*="mailto:"] {
-    color: black
+.mails .link[href*="mailto:"]::before {
+    content: "";
+    display: inline-block;
+    background: var(--mail-photo);
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    margin: -10px 0;
+    margin-right: 10px;
+}
+
+.downloads .link::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: -5px 0;
+    margin-right: 10px;
+}
+
+.downloads .link--pdf::before {
+    background: var(--pdf-photo);
+    background-size: 100%;
+}
+
+.downloads .link--zip::before {
+    background: var(--zip-photo);
+    background-size: 100%;
+}
+
+.link {
+    display: block;
+    height: 30px;
+}
+
+.link--cursive {
+    font-style: italic;
+}
+
+.link--bold {
+    font-weight: bold;
 }
