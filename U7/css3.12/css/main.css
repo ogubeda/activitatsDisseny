@@ -1,0 +1,46 @@
+ @keyframes changeLetter {
+     0% {
+         color: red;
+         letter-spacing: 2px;
+     }
+     20% {
+         color: orange;
+         letter-spacing: 4px;
+     }
+     40% {
+         color: yellow;
+         letter-spacing: 6px;
+     }
+     60% {
+         color: green;
+         letter-spacing: 8px;
+     }
+     80% {
+         color: blue;
+         letter-spacing: 10px
+     }
+     100% {
+         color: blueviolet;
+         letter-spacing: 12px;
+     }
+ }
+
+@keyframes bounce {
+        0%   { transform: scale(1, 1) translateX(0); }
+        10% {transform: scale(1.1, 0.9) translateX(0);}
+        50%  { transform: scale(1.2, 0.8) translateX(100%); }
+        100% { transform: scale(1, 1) translateX(0); }
+}
+
+.letter:hover {
+    animation: changeLetter 10s;
+}
+
+.ball {
+    border-radius: 50%;
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    animation: bounce 2s infinite ease;
+    margin: 50px 0;
+}
