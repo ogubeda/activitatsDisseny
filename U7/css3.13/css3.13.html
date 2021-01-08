@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clip-path :: DIW</title>
+  <meta name="viewport" content="width=device-width">
+  <style>
+    body {
+      margin-top: 20px;
+      display: flex;
+    }
+    div {
+        width:fit-content;
+        height: fit-content;
+        border: 1px solid red;
+        margin: 15px;
+    }
+    .clip-css {
+      clip-path: polygon(100% 0, 0 100%, 0 0);
+    }
+
+    .clip-css2 {
+      clip-path: circle(50%);
+    }
+
+    .clip-css3 {
+      clip-path: ellipse(32% 45%)
+    }
+
+    .clip-css4 {
+      padding: 10px;
+      clip-path: inset(10% 10% 10% 10% round 10px);
+    }
+  </style>
+</head>
+<body>
+   <div>
+    <img src="http://diw.jomuoru.xyz/images/clip-demo.jpg" class="clip-css" width="140" height="140">
+ </div>
+<div>
+    <img src="http://diw.jomuoru.xyz/images/clip-demo.jpg" class="clip-css2" width="140" height="140">
+  </div>
+<div>
+    <img src="http://diw.jomuoru.xyz/images/clip-demo.jpg" class="clip-css3" width="140" height="140">
+ </div>
+<div>
+    <img src="http://diw.jomuoru.xyz/images/clip-demo.jpg" class="clip-css4" width="140" height="140">
+</div>
+</body>
+
+</html>
