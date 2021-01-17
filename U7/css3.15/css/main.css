@@ -1,0 +1,52 @@
+:root {
+    --color-red: crimson;
+}
+
+@keyframes  animateFilter{
+    0% {filter: drop-shadow(0 0 0.55rem var(--color-red));}
+    100% {filter: drop-shadow(0 0 2rem var(--color-red));}
+}
+
+img {
+    margin: 25px
+}
+
+.filter1 {
+    filter: grayscale(100%);
+}
+
+.filter2 {
+    filter: blur(2px)
+}
+
+.filter3 {
+    filter: sepia(75%)
+}
+
+.filter4 {
+    filter: saturate(20%)
+}
+
+.filter5 {
+    filter: opacity(60%)
+}
+
+.filter6 {
+    filter: brightness(30%)
+}
+
+.filter7 {
+    filter: contrast(60%)
+}
+
+.filter8 {
+    filter: hue-rotate(180deg)
+}
+
+.filter9 {
+    filter: invert(20%)
+}
+
+.filter10 {
+    animation: animateFilter linear 2s infinite;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
@@ -9,16 +9,32 @@
   margin:30px;
 }
 .mascara-0{
- 
+  mask: url(./svg/cloud-solid.svg) 0 0/300px 300px;
+  -webkit-mask: url(./svg/cloud-solid.svg) 0 0/300px 300px;
 }
 .mascara-1{
- 
+  mask: url(./svg/egg-solid.svg)  0 0/100px 100px;
+  mask-repeat: repeat;
+  -webkit-mask: url(./svg/egg-solid.svg)  0 0/100px 100px;
+  -webkit-mask-repeat: repeat;
 }
 .mascara-2{
+  mask: url(./svg/cloud-solid.svg) 0 0/250px 250px;
+  mask-repeat: repeat-x;
+  -webkit-mask: url(./svg/cloud-solid.svg) 0 0/250px 250px;
+  -webkit-mask-repeat: repeat-x;
  }
 .mascara-3{
+  mask: url(./svg/egg-solid.svg) 0 0/200px 200px;
+  mask-repeat: repeat-y;
+  -webkit-mask: url(./svg/egg-solid.svg) 0 0/200px 200px;
+  -webkit-mask-repeat: repeat-y;
 }
 .mascara-4{
+  mask: url(./svg/cloud-solid.svg);
+  mask-clip: content-box;
+  -webkit-mask: url(./svg/cloud-solid.svg);
+  -webkit-mask-clip: content-box;
 }
 </style>
 </head>
