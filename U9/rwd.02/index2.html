@@ -6,55 +6,79 @@
     <meta charset="utf-8" />
     <style>
         .container {
+            display: -webkit-flex;
             display: flex;
-            flex-wrap: wrap;
-            height: 500px;
-        }
-
-        .box {
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            margin: 0;
+            padding: 0;
             width: 100%;
         }
 
-        .dark_blue {
-            background-color: blue;
+        .container div {
+            box-sizing: border-box;
+            min-width: 150px;
+            min-height: 150px;
         }
 
-        .light_blue {
-            background-color: cadetblue;
+        .c1 {
+            background-color: #000;
         }
 
-        .green {
-            background-color: chartreuse;
+        .c2 {
+            background-color: rgb(43, 43, 43);
         }
 
-        @media screen and (min-width: 450px) {
-            .dark_blue {
+        .c3 {
+            background-color: rgb(77, 77, 77);
+        }
+
+
+        .c1,
+        .c2,
+        .c3 {
+            width: 100%;
+        }
+
+        @media (min-width: 600px) {
+            .c1 {
+                width: 60%;
+                -webkit-order: 2;
+                order: 2;
+            }
+
+            .c2 {
+                width: 40%;
+                -webkit-order: 1;
+                order: 1;
+            }
+
+            .c3 {
+                width: 100%;
+                -webkit-order: 3;
+                order: 3;
+            }
+        }
+
+
+        @media (min-width: 800px) {
+            .c2 {
                 width: 20%;
             }
 
-            .light_blue {
-                width: 70%;
-            }
-        }
-
-        @media screen and (min-width: 540px) {
-            .dark_blue .green {
+            .c3 {
                 width: 20%;
-            }
-
-            .light_blue {
-                width: 50%;
             }
         }
     </style>
 </head>
 
 <body>
-    <section class="container">
-        <section class="box dark_blue"></section>
-        <section class="box light_blue"></section>
-        <section class="box green"></section>
-    </section>
+    <div class="container">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+    </div>
 </body>
 
 </html>
