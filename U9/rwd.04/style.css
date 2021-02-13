@@ -15,12 +15,7 @@ body {
   padding-bottom: 10px;
 }
 
-.main-nav {
-/* */
-}
-
-.nav-links,
-.logo {
+.nav-links, .logo {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -37,6 +32,10 @@ body {
   margin-left: 20px;
 }
 
+.company_title {
+  display: block;
+}
+
 .navbar-toggle {
   position: absolute;
   top: 10px;
@@ -47,63 +46,66 @@ body {
 }
 
 #chkToggle {
-/* */
+  display: none;
 }
 
-#chkToggle:checked + ul.main-nav {
-  display: block;
+#chkToggle:checked+ul.main-nav {
+  display: none;
 }
 
-main{
-/* */
+main {
+  display: flex;
+  flex-direction: row;
 }
-aside{
+
+aside {
   padding: 10px;
 }
 
-h3{ 
+h3 {
   padding: 10px;
 }
 
-img{
-/* */
+img {
+  display: none;
 }
 
-
-@media only screen and (max-device-width: 1080px){
+@media screen and ( min-width:900px) {
   .navbar {
-  
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
   }
-
-  #chkToggle:checked + ul.main-nav {
+  .navbar-toggle {
+    display: none;
+  }
+  #chkToggle:checked+ul.main-nav {
     display: flex;
   }
-
-  .main-nav {
-  
+  #chkToggle {
+    display: none;
   }
-
+  .main-nav {
+    display: flex;
+    justify-content: right;
+  }
   .main-nav li {
+    list-style-type: none;
     margin: 0;
   }
-
   .nav-links {
     margin-left: 40px;
   }
-
   .logo {
     margin-top: 0;
   }
-
-  .navbar-toggle {
- 
+  img {
+    display: block;
   }
-
-  .logo:hover,
-  .nav-links:hover {
+  .company_title {
+    display: none;
+  }
+  .logo:hover, .nav-links:hover {
     color: rgba(255, 255, 255, 1);
   }
-  
-}
-
 }
