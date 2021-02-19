@@ -4,25 +4,37 @@ $backColor: #15a
 $backHover: lighten($backColor, 10%)
 $colorTitle: darken($backColor, 10%)
 
-@mixin setColors
-    color: $text
-    background-color: $backColor
+@import "mixin"
 
-@mixin setColorsHover
-    color: $textHover
-    background: $backHover
+@keyframes iluminar 
+    from 
+          @include setColors()
 
-@mixin boxSize($type)
-    -webkit-box-sizing: $type
-    -moz-box-sizing: $type
-    box-sizing: $type
+    to 
+          @include setColorsHover()
 
-@mixin transitions($property, $duration, $timing: linear)
-    -moz-transition: $property $duration $timing
-    -webkit-transition: $property $duration $timing
-    transition: $property $duration $timing
+body 
+    padding: 0px
+    margin: 0px
 
-@mixin animations($name, $duration, $timing: linear) 
-    -moz-animation: $name $duration $timing
-    -webkit-animation: $name $duration $timing
-    animation: $name $duration $timing
+
+header 
+  padding: 12px 30px
+  font-size: 1.8em
+  color: #444
+  background-color: #eee
+  font-weight: bold
+  text-shadow: 1px 1px 2px #aaa
+  font-family: Georgia, "Times New Roman", Times, serif
+
+footer 
+  @include setColors()
+  @include boxSize(border_box)
+  position: absolute
+  width: 100%
+  bottom: 0px
+  padding: 5px
+
+
+@import "menu"
+@import "contenido"
