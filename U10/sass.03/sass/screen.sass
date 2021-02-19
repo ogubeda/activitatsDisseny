@@ -1,0 +1,28 @@
+$text: #eee
+$textHover: lighten($text, 10%)
+$backColor: #15a
+$backHover: lighten($backColor, 10%)
+$colorTitle: darken($backColor, 10%)
+
+@mixin setColors
+    color: $text
+    background-color: $backColor
+
+@mixin setColorsHover
+    color: $textHover
+    background: $backHover
+
+@mixin boxSize($type)
+    -webkit-box-sizing: $type
+    -moz-box-sizing: $type
+    box-sizing: $type
+
+@mixin transitions($property, $duration, $timing: linear)
+    -moz-transition: $property $duration $timing
+    -webkit-transition: $property $duration $timing
+    transition: $property $duration $timing
+
+@mixin animations($name, $duration, $timing: linear) 
+    -moz-animation: $name $duration $timing
+    -webkit-animation: $name $duration $timing
+    animation: $name $duration $timing
