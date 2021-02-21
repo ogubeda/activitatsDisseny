@@ -1,0 +1,47 @@
+$text: #eee
+$textHover: lighten($text, 10%)
+$backColor: #15a
+$backHover: lighten($backColor, 10%)
+$colorTitle: darken($backColor, 10%)
+$theme: dark
+
+@if $theme == dark
+  $backColor: #138
+@else if $theme == light
+  $text: #138
+  $backColor: #138
+
+@import "mixin"
+
+@keyframes iluminar 
+    from 
+          @include setColors()
+
+    to 
+          @include setColorsHover()
+
+body 
+    padding: 0px
+    margin: 0px
+
+
+header 
+  padding: 12px 30px
+  font-size: 1.8em
+  color: #444
+  background-color: #eee
+  font-weight: bold
+  text-shadow: 1px 1px 2px #aaa
+  font-family: Georgia, "Times New Roman", Times, serif
+
+footer 
+  @include setColors()
+  @include boxSize(border_box)
+  position: absolute
+  width: 100%
+  bottom: 0px
+  padding: 5px
+
+
+@import "menu"
+@import "contenido"
